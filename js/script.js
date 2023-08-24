@@ -44,12 +44,47 @@ for (let teamEl of team) {
 }
 
 //* Stampare le stesse informazioni su DOM sottoforma di stringhe
+// const containerEl = document.getElementById('container');
+
+// let info = '';
+
+// for (let teamEl of team) {
+//     info+= `${teamEl.name} <br> ${teamEl.rule} <br> ${teamEl.photo} <br>`
+// };
+
+// containerEl.innerHTML = `${info}`;
+
+//* Bonus
+//* Trasformare la stringa foto in una immagine effettiva
+
+// const containerEl = document.getElementById('container');
+
+// let info = '';
+
+// for (let teamEl of team) {
+//     info+= `<li>${teamEl.name} </li>
+//     <li>${teamEl.rule} </li>
+//     <img class = "mb-4" src="img/${teamEl.photo}" alt="${teamEl.photo}" />`
+// };
+
+// containerEl.innerHTML = `<ul>${info}</ul>`;
+
+//* BONUS 2:
+//* Organizzare i singoli membri in card/schede
+
 const containerEl = document.getElementById('container');
 
 let info = '';
 
 for (let teamEl of team) {
-    info+= `${teamEl.name} <br> ${teamEl.rule} <br> ${teamEl.photo}<br>`
+    info+= `<div class="card mb-4" style="width: 18rem;">
+    <img class = "mb-4" src="img/${teamEl.photo}" alt="${teamEl.photo}" />
+    <div class="card-body text-center">
+      <h5 class="card-title">${teamEl.name}</h5>
+      <h5 class="card-text">${teamEl.rule}</h5>
+    </div>
+  </div>`
 };
 
 containerEl.innerHTML = `${info}`;
+
