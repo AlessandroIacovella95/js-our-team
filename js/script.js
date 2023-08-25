@@ -77,7 +77,7 @@ const containerEl = document.getElementById('container');
 let info = '';
 
 for (let teamEl of team) {
-    info+= `<div class="card mb-4" style="width: 18rem;">
+    info+= `<div class="card mb-3">
     <img class = "mb-4" src="img/${teamEl.photo}" alt="${teamEl.photo}" />
     <div class="card-body text-center">
       <h5 class="card-title">${teamEl.name}</h5>

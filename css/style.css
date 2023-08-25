@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(to left, #0074e4, #08c3d8);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100% / 4);
+    border: none;
+    box-shadow: 15px 15px 15px black;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    filter: grayscale(1);
+    cursor: pointer;
+    z-index: 5;
+}
+
